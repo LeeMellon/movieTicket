@@ -28,9 +28,18 @@ function Movie(name, rating, adult, child, senior) {
 }
 house = []
 
-function ticketPrice(Movie, time, tier) {
-
+function ticketPrice(){
+  for(index = 0; index < house.length; index ++){
+    if (movieChoice === house[index].name){
+    myMovie = house[index];
+      console.log(myMovie, tierChoice);
+    var myPrice = myMovie[tierChoice][timeChoice]
+      console.log(myPrice, typeof myPrice);
+    }
+  }
 }
+
+
 
 
 
@@ -38,23 +47,23 @@ $(function() {
 
   $("#movie-form").change(function(event) {
     movieChoice = $("input:radio[name=movie]:checked").val();
-    event.preventDefault();
-    $("#which-time").delay(950).fadeTo(500, 1);
+    // event.preventDefault();
+    $("#which-time").delay(450).fadeTo(500, 1);
     console.log(movieChoice);
 
   });
   $("#time-form").change(function(event) {
     timeChoice = $("input:radio[name=time]:checked").val();
-    event.preventDefault();
-    $("#which-tier").delay(950).fadeTo(500, 1);
+    // event.preventDefault();
+    $("#which-tier").delay(450).fadeTo(500, 1);
     console.log(timeChoice);
 
   });
   $("#tier-form").change(function(event) {
     tierChoice = $("input:radio[name=tier]:checked").val();
-    event.preventDefault();
-    $("#which-time").delay(950).fadeTo(500, 1);
+    // event.preventDefault();
     console.log(tierChoice);
+    ticketPrice();
 
   });
 var billboards = new Movie("Three Billboards Outside Ebbing", "R")
