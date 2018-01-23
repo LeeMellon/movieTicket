@@ -35,10 +35,11 @@
 }
 
 #which-time{
+  border-radius: 20px;
   display: flex;
   opacity: 0;
   background-color: rgba(84, 85, 91, 0.5);
-  justify-content: center;*/
+  justify-content: center;
   align-content: center;
   padding: 20px;
 
@@ -46,6 +47,7 @@
 #which-tier{
   display: flex;
   opacity: 0;
+  border-radius: 20px;
   background-color: rgba(84, 85, 91, 0.5);
   justify-content: center;
   align-content: center;
@@ -79,10 +81,30 @@
   background-repeat: no-repeat;
 }
 
-.js-container{
+.form-container{
   padding-right: 300px;
   padding-left: 300px;
   padding-top: 25px;
   color: rgb(220, 220, 226);
   font-size: 23pt;
+}
+#shroud-container{
+  /*display: none;*/
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+.price-display{
+  display: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-direction: row;
+  font-size: 16pt;
+  border-radius: 20px;
+  background-color: rgba(84, 85, 91, 0.5);
+  color: rgb(220, 220, 226);
+  font-size: 15pt;
+  width: 45%;
 }
