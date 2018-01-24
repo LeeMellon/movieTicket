@@ -19,14 +19,15 @@
   flex-flow: row;
   height: 35%;
   width: 100%;
+  justify-content: space-around;
   align-content: center;
-  justify-content:center;
   padding-left: 280px;
 
 }
 #which-movie{
   border-radius: 20px;
   display: flex;
+  display: none;
   background-color: rgba(84, 85, 91, 0.5);
   justify-content: center;
   align-content: center;
@@ -54,40 +55,6 @@
   padding:20px;
 
 }
-
-.movie1{
-  display: flex;
-  width: 25%;
-  height: 100%;
-  background-image: url("../img/images.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.movie2{
-  display: flex;
-  width: 25%;
-  height: 100%;
-  background-image: url("../img/bilboards.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.movie3{
-  display: flex;
-  width: 25%;
-  height: 100%;
-  background-image: url("../img/money.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.form-container{
-  padding-right: 300px;
-  padding-left: 300px;
-  padding-top: 25px;
-  color: rgb(220, 220, 226);
-  font-size: 23pt;
-}
 #shroud-container{
   /*display: none;*/
   justify-content: center;
@@ -107,4 +74,78 @@
   color: rgb(220, 220, 226);
   font-size: 15pt;
   width: 45%;
+}
+
+
+.description1{
+  display: none;
+}
+
+.movie1{
+  display: flex;
+  width: 300px;
+  height: 100%;
+  background-image: url("../img/images.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.movie1:hover .description1{
+  display: flex;
+  color: rgb(220, 220, 226);
+  width: 290px;
+  font-size: 15pt;
+  background-color: rgba(84, 85, 91, 0.8);
+  padding: 20px;
+  box-shadow: 10px 10px 10px 1px #888888;
+}
+.description2{
+  display: none;
+}
+
+.movie2{
+  display: flex;
+  width: 300px;
+  height: 100%;
+  background-image: url("../img/bilboards.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.movie2:hover .description2{
+  display: flex;
+  color: rgb(220, 220, 226);
+  width: 290px;
+  font-size: 15pt;
+  background-color: rgba(84, 85, 91, 0.8);
+  padding: 20px;
+  box-shadow: 10px 10px 10px 1px #888888;
+}
+.description3{
+  display: none;
+}
+
+.movie3{
+  display: flex;
+  width: 300px;
+  height: 100%;
+  background-image: url("../img/moneys.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.movie3:hover .description3{
+  display: flex;
+  color: rgb(220, 220, 226);
+  width: 290px;
+  font-size: 15pt;
+  background-color: rgba(84, 85, 91, 0.8);
+  padding: 20px;
+  box-shadow: 10px 10px 10px 1px #888888;
+}
+
+.form-container{
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 25px;
+  color: rgb(220, 220, 226);
+  font-size: 23pt;
 }
