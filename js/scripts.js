@@ -40,17 +40,13 @@ function ticketPrice() {
   }
 }
 
-
-
-
-
 $(function() {
 
 $(".description1").click(function(event) {
   movieChoice = "I Tonya"
   $("#which-time").delay(450).fadeTo(500, 1);
-
 });
+
 $(".description2").click(function(event) {
   movieChoice = "Three Billboards Outside Ebbing"
   $("#which-time").delay(450).fadeTo(500, 1);
@@ -64,14 +60,13 @@ $(".description3").click(function(event) {
 $("#time-form").change(function(event) {
   timeChoice = $("input:radio[name=time]:checked").val();
   $("#which-tier").delay(450).fadeTo(500, 1);
-
 });
+
 $("#tier-form").change(function(event) {
   tierChoice = $("input:radio[name=tier]:checked").val();
   ticketPrice();
   $(".form-container").delay(100).fadeOut(700, "swing", "complete")
   $(".price-display").delay(850).fadeIn(900, "swing", "complete");
-
 });
 
 
@@ -80,5 +75,4 @@ $("#tier-form").change(function(event) {
   var money = new Movie("All the Money in the World", "R")
   var tonya = new Movie("I Tonya", "R")
   house.push(tonya, money, billboards);
-  console.log(house);
 });
